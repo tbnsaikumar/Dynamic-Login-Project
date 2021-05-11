@@ -1,0 +1,84 @@
+<html>
+
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type='text/css'>
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+  background-size: cover;
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: green;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 3px solid green;
+  margin-bottom: 40px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border:0px;
+  outline: 5px;
+  background: white;
+  border-radius:5px;
+  color: black;
+  font-size: 21px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background: green;
+  border: 2px solid green;
+  border-radius:25px;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 25px 0;
+}
+</style>
+</head>
+<body>
+<form action='./dylogin' method='get' >
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+
+<i class="fa fa-user" style="font-size:25px;color:black"></i>
+    <input type="text" placeholder="Username" name='t1' required autofocus='autofocus'>
+  </div>
+
+  <div class="textbox">
+    <i class="fa fa-lock" style="font-size:26px;color:black"></i>
+    <input type="password" placeholder="Password" name='t2' required>
+  </div>
+
+  <input type="submit" class="btn" value="Sign in">
+</div>
+  </body>
+</html>
